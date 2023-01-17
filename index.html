@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS, Lesson-4</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  
+  <div class="container">
+    <div class="exercise">
+      <h2 class="heading">KIM BIRINCHI BORISHGA DAVAY</h2>
+      
+      <form class="distance-form" action="https://echo.htmlacademy.ru" method="GET">
+        
+        <div class="form-group">
+          <label class="distance-label" for="distance-input">Masofa</label>
+          <input class="form-control distance-input" type="number" id="distance-input" name="distance" placeholder="100km" step="any" required>
+        </div>
+        
+        <button class="btn" type="submit">Hisobla</button>
+      </form>
+      
+      <div class="results">
+        <div class="result">
+          <div class="border rounded">
+            <span class="material-icons">directions_run</span>
+            <span class="type">Piyoda</span>
+            <span class="time walk-time">n Soat</span>
+          </div>
+        </div>
+        <div class="result">
+          <div class="border rounded">
+            <span class="material-icons">pedal_bike</span>
+            <span class="type">Velosiped</span>
+            <span class="text-success time bike-time">n Soat</span>
+          </div>
+        </div>
+        <div class="result">
+          <div class="border rounded">
+            <span class="material-icons">directions_car</span>
+            <span class="type">Moshina</span>
+            <span class="time car-time">n Soat</span>
+          </div>
+        </div>
+        <div class="result">
+          <div class="border rounded">
+            <span class=" material-icons">flight</span>
+            <span class="type">Samaliyot</span>
+            <span class="time plane-time">n Soat</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="error-message"></div>
+    </div>
+
+
+    <div class="exercise">
+      <h2 class="heading">Temperature convertor</h2>
+
+      <form class="temp-form" action="https://echo.htmlacademy.ru" method="GET">
+        
+        <div class="form-group">
+          <label class="" for="celcy-input">Temperature in Celsius (C)</label>
+          <input class="form-control celcy-input" type="number" id="celcy-input" name="celcy" placeholder="30.0 C" step="any" required>
+        </div>
+
+        <div class="form-group">
+          <label class="" for="farengey-input">Temperature in Fahrenheit (F)</label>
+          <input class="form-control farengey-input" type="number" id="farengey-input" name="farengey" placeholder="86.0 F" step="any" readonly>
+        </div>
+        
+        <button class="btn " type="submit">Convert</button>
+      </form>
+    </div>
+  </div>
+  
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
